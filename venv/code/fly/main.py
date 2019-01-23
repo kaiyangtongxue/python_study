@@ -91,7 +91,7 @@ def main():
         key_control(hero)
         if hero.hit(enemy):
             score+=1
-        enemy.hit(hero)
+        # enemy.hit(hero)
         # 更新需要显示的内容
         pygame.display.update()
         time.sleep(0.01)

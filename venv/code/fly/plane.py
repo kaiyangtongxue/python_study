@@ -30,7 +30,7 @@ class BasePlane(Base):
         for bullet in self.bullet_list:
             if bullet.hit(enemy):
                 bullet.live=False
-                enemy.live=False
+                # enemy.live=False
                 return True
 
 class HeroPlane(BasePlane):

@@ -7,7 +7,7 @@ class Basebullet(Base):
         Base.__init__(self, screen_temp, x, y, image_name)
 
     def hit(self,enemy):
-        if pygame.Rect.colliderect(self.rect,enemy.rect):
+        if pygame.Rect.colliderect(self.getrect(),enemy.getrect()):
             print('hit')
             return True
         else:
